@@ -12,7 +12,7 @@
 ## How the syetem work
 ![Illustration system](/Asset/Asset1.drawio.png).
 
-## Demo How to use systwm
-![!Video Demo](https://drive.google.com/file/d/1VmNdJ6g0cvlevx71Mt82NQDEMReCWh-s/view?usp=sharing)
+<p>Video Link Demo:</p>
+https://drive.google.com/file/d/1VmNdJ6g0cvlevx71Mt82NQDEMReCWh-s/view?usp=sharing
 
    
