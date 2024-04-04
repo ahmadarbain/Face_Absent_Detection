@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Webcam</title>
+    <link rel="stylesheet" href="static/style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h1>Webcam Object Detection</h1>
+                <div class="button-container">
+                    <form action="/start_detection" method="post">
+                        <button type="submit">Start Object Detection</button>
+                    </form>
+                    <form action="/start_capture" method="post">
+                        <button type="submit">Capture Image</button>
+                    </form>
+                </div>
+
+                <!-- Tampilkan gambar yang sudah dicapture -->
+                {% if image_filename %}
+                    <div class="image-container">
+                        <h2>Latest Captured Image</h2>
+                        <img src="{{ url_for('raw_images', filename=image_filename) }}" alt="Captured Image">
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div class="side-content">
+                <div class="card">
+                    <h2>Employee Information</h2>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time Attanding</th>
+                            <th>Status</th>
+                        </tr>
+                        {% for key, attendance in attendance.items() %}
+                        <tr>
+                            <td>{{ attendance.name }}</td>
+                            <td>{{ attendance.attendance_time }}</td>
+                            <td>{{ attendance.status }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
