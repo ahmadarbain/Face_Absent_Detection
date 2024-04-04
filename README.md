@@ -10,7 +10,7 @@
 - The system ready to use
 
 ## How the syetem work
-![Illustration system](../Asset/Asset1.drawio.png).
+![Illustration system](/Asset/Asset1.drawio.png).
 
 ## Demo How to use systwm
 ![!Video Demo]()
